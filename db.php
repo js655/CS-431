@@ -23,7 +23,17 @@ $resultCheck = mysqli_num_rows($results);
 if ($resultCheck = 1){
     if ($row = mysqli_fetch_row($results)){
         if ($password == row['userpass']){
-
+            $json =array(
+                'login' => 'Yes',
+                'type' => $row['usertype']
+            );
+            echo $json;
+        }else {
+            $json =  array(
+                'login' => 'No',
+                'type' => ''
+            );
+            echo $json;
         }
     }
 }
