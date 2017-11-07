@@ -38,3 +38,18 @@ if ($resultCheck = 1){
     }
 }
 
+function lookupGrade($type){
+    if ($type == 'Student' || $type == 'Faculty'){
+
+    }
+}
+
+function addGrades($type, $username){
+
+}
+
+function editGrades($type, $username){}
+
+function courseLookup(){
+
+}
